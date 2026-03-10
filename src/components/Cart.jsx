@@ -18,7 +18,6 @@ export function Cart() {
     userProgressContext.hideCart();
   }
 
-  
   return (
     <Modal className="cart" open={userProgressContext.progress === "cart"}>
       <h2>Your Cart</h2>
@@ -39,9 +38,11 @@ export function Cart() {
         <Button textOnly onClick={handleCloseCart}>
           Close
         </Button>
-        <Button onClick={userProgressContext.showCheckout}>
-          Go to Checkout
-        </Button>
+        {cartContext.items.length > 0 && (
+          <Button onClick={userProgressContext.showCheckout}>
+            Go to Checkout
+          </Button>
+        )}
       </p>
     </Modal>
   );
