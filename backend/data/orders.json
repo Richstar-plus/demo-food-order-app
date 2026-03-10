@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 2
+      }
+    ],
+    "customer": {
+      "name": "Idara Sunday",
+      "email": "richardsunday0812@gmail.com",
+      "street": "Ibeto",
+      "postal-code": "500101",
+      "city": "Port Harcourt"
+    },
+    "id": "414.73297621598834"
+  },
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      }
+    ],
+    "customer": {
+      "name": "Idara Sunday",
+      "email": "richardsunday0812@gmail.com",
+      "street": "Ibeto",
+      "postal-code": "500101",
+      "city": "Port Harcourt"
+    },
+    "id": "90.06795747555796"
+  },
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Margherita Pizza",
+        "price": "12.99",
+        "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+        "image": "images/margherita-pizza.jpg",
+        "quantity": 1
+      }
+    ],
+    "customer": {
+      "name": "Idara Sunday",
+      "email": "richardsunday0812@gmail.com",
+      "street": "Ibeto",
+      "postal-code": "500101",
+      "city": "Port Harcourt"
+    },
+    "id": "357.08441133577605"
+  }
+]
