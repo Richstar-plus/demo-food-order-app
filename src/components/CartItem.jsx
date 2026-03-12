@@ -1,11 +1,25 @@
 import { currencyFormatter } from "../util/formatting";
 
-export function CartItem({ name, quantity, price, onIncrease, onDecrease }) {
+export function CartItem({
+  name,
+  quantity,
+  price,
+  onIncrease,
+  onDecrease,
+  image,
+}) {
   return (
     <li className="cart-item">
-      <p className="">
-        {name} - {quantity} x {currencyFormatter.format(price)}
-      </p>
+      <div className="cart-item-wrapper">
+        <p className="cart-item-image">
+          <img src={`http://localhost:3000/${image}`} alt={name} />
+        </p>
+        <p className="cart-details-holder">
+          <p className="cart-name">{name}</p>
+          <p className="cart-quantity">{quantity}</p>
+          <p className="cart-price">{currencyFormatter.format(price)}</p>
+        </p>
+      </div>
       <p className="cart-item-actions">
         <button onClick={onDecrease}>-</button>
         <span>{quantity}</span>

@@ -35,6 +35,7 @@ export function Cart() {
             key={item.id}
             name={item.name}
             quantity={item.quantity}
+            image={item.image}
             price={item.price}
             onIncrease={() => cartContext.addItemToCartHandler(item)}
             onDecrease={() => cartContext.removeItemFromCartHandler(item.id)}

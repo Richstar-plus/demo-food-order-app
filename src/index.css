@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,10 +6,10 @@
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#29251c, #2c2306);
+  background: #f3f3fe;
   color: #d9e2f1;
   min-height: 100vh;
 }
@@ -37,15 +37,16 @@ body {
 
 #main-header button {
   font-size: 1.5rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   margin: 0;
-  color: #ffc404;
+  color: #0a1551;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
@@ -148,8 +149,42 @@ h1 {
   margin: 0.5rem 0;
 }
 
+.cart-item-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cart-details-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.cart-details-holder p:first-child {
+  font-weight: bold;
+}
+
+.cart-details-holder p:last-child {
+  font-weight: bold;
+  color: #46443c;
+}
+
 .cart-item p {
   margin: 0;
+}
+
+.cart-item-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 6px;
+}
+
+.cart-item-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .cart-item-actions {
@@ -226,7 +261,7 @@ h1 {
   cursor: pointer;
   background-color: transparent;
   border: none;
-  color: #ffc404;
+  color: #0a1551;
 }
 
 .text-button:hover,
