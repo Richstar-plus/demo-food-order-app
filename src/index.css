@@ -213,6 +213,20 @@ h1 {
   color: #ffab04;
 }
 
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .control {
   margin: 0.5rem 0;
   display: flex;
@@ -226,11 +240,18 @@ h1 {
 
 .control input {
   width: 100%;
-  max-width: 20rem;
   font: inherit;
   padding: 0.5rem;
   border-radius: 4px;
   border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-action-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 .control-row {

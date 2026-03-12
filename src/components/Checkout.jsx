@@ -57,10 +57,12 @@ export function Checkout() {
 
   let actions = (
     <>
+    <div className="form-action-holder">
+      <Button>Submit Order</Button>
       <Button type="button" textOnly onClick={handleCloseCheckout}>
         Close
       </Button>
-      <Button>Submit Order</Button>
+    </div>
     </>
   );
 
@@ -88,16 +90,21 @@ export function Checkout() {
       open={userProgressContext.progress === "checkout"}
       onClose={handleCloseCheckout}
     >
-      <form onSubmit={handleSubmitOrder}>
-        <h2>Checkout</h2>
-        <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
+      <form onSubmit={handleSubmitOrder} className="checkout-form">
+        <div className="form-control-header">
+          <h2>Checkout</h2>
+          <p>Total Amount: {currencyFormatter.format(cartTotal)}</p>
+        </div>
 
-        <Input label="Full Name" type="text" id="name" />
-        <Input label="Email Address" type="email" id="email" />
-        <Input label="Street" type="text" id="street" />
-        <div className="control-row">
-          <Input label="Postal Code" type="text" id="postal-code" />
-          <Input label="City" type="text" id="city" />
+        <div className="form-input-container">
+          <div className="main-input"></div>
+          <Input label="Full Name" type="text" id="name"  inputClassName="main-input" />
+          <Input label="Email Address" type="email" id="email" />
+          <Input label="Street" type="text" id="street" />
+          <div className="control-row">
+            <Input label="Postal Code" type="text" id="postal-code" />
+            <Input label="City" type="text" id="city" />
+          </div>
         </div>
 
         {error && <Error title="Failed to submit order" message={error} />}
